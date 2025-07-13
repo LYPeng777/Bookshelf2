@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookshelf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bookshelf</h1>
+  <form id="bookForm">
+    <input type="text" id="title" placeholder="Book Title" required>
+    <input type="file" id="cover" accept="image/*" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <div class="shelf">
+    <h2>To Be Read</h2>
+    <div id="tbr" class="book-shelf" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+
+  <div class="shelf">
+    <h2>Read</h2>
+    <div id="read" class="book-shelf" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
